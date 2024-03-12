@@ -1,0 +1,11 @@
+test/
+.venv/
+st_ydata_profiling/frontend/node_modules/
+build/
+dist/
+__pycache__/
+
+*.egg-info
+example.py
+spg.csv
+package-lock.json
