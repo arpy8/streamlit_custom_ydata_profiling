@@ -10,3 +10,4 @@ __pycache__/
 example.py
 spg.csv
 package-lock.json
+test_example.py

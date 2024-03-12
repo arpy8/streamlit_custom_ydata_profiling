@@ -1,8 +1,6 @@
 import os
-import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
-from ydata_profiling import ProfileReport
 
 # Create a _RELEASE constant. We'll set this to False while we're developing
 # the component, and True when we're ready to package and distribute it.
@@ -28,7 +26,7 @@ if not _RELEASE:
         # We give the component a simple, descriptive name ("my_component"
         # does not fit this bill, so please choose something better for your
         # own component :)
-        "st_ydata_profiling",
+        "display_profile_report",
         # Pass `url` here to tell Streamlit that the component will be served
         # by the local dev server that you run via `npm run start`.
         # (This is useful while your component is in development.)
@@ -40,7 +38,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("st_ydata_profiling", path=build_dir)
+    _component_func = components.declare_component("display_profile_report", path=build_dir)
 
 
 # Create a wrapper function for the component. This is an optional
@@ -48,12 +46,12 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # output value, and add a docstring for users.
-def st_ydata_profiling(data, height=None, navbar=True, key=None):
+def display_profile_report(report, height=None, navbar=True, key=None):
     """Display a profile report.
 
     Parameters
     ----------
-    report : ydata_profiling.ProfileReport
+    report : pandas_profiling.ProfileReport
         The profile report instance to display.
     height : int or None
         Report height. If set to None, report will take full height, but
@@ -72,20 +70,18 @@ def st_ydata_profiling(data, height=None, navbar=True, key=None):
         "use_local_assets": True,
         "navbar_show": navbar if height is not None else False,
         "style": {
-            "full_width": True,
+            "full_width": True
         }
     }
 
     try:
-        report = ProfileReport(data, progress_bar=True)
         report.set_variable("html", config)
-        st.write(report)
     except AttributeError:
         report.config.html.inline = config["inline"]
         report.config.html.minify_html = config["minify_html"]
         report.config.html.use_local_assets = config["use_local_assets"]
         report.config.html.navbar_show = config["navbar_show"]
         report.config.html.full_width = config["style"]["full_width"]
-    
+
     with st.spinner("Generating profile report..."):
         _component_func(html=report.to_html(), height=height, key=key, default=None)

@@ -1,5 +1,6 @@
 import pandas as pd
-from st_ydata_profiling import st_ydata_profiling
+from ydata_profiling import ProfileReport
+from st_ydata_profiling import display_profile_report
 
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
@@ -26,4 +27,6 @@ from st_ydata_profiling import st_ydata_profiling
 # name_input = st.text_input("Enter a name", value="Streamlit")
 
 if __name__=="__main__":
-    num_clicks = st_ydata_profiling(pd.read_csv("assets/spg.csv"))
+    data = pd.read_csv("assets/spg.csv")
+    report = ProfileReport(data)
+    display_profile_report(report)
