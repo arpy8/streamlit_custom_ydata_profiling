@@ -1,5 +1,5 @@
 # st-ydata-profiling
-This is a slightly tweaked version of the `streamlit-pandas-profiling` with the latest dependencies. This custom component was created for my another ongoing whose dependencies kept on clashing with the older version of this library, since pandas-profiling is deprecated.
+This is a slightly tweaked version of the `streamlit-pandas-profiling` component but with the latest dependencies. I've created this for my another ongoing project whose dependencies kept on clashing with the `streamlit-pandas-profiling` by okld.
 
 
 [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link] 
