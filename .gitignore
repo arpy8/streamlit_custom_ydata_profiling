@@ -4,6 +4,7 @@ st_ydata_profiling/frontend/node_modules/
 build/
 dist/
 __pycache__/
+.pytest_cache/
 
 *.egg-info
 example.py
