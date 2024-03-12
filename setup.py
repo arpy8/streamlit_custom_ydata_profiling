@@ -11,7 +11,7 @@ setup(
     description="YData Profiling component for Streamlit.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/arpy8/st-ydata-profiling",
+    url="https://github.com/arpy8/st_ydata_profiling",
     author="arpy8",
     license="MIT",
     license_file="LICENSE",

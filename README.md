@@ -7,7 +7,7 @@ This is a slightly tweaked version of the `streamlit-pandas-profiling` component
 ## Installation
 
 ```sh
-pip install st-ydata-profiling
+pip install st_ydata_profiling
 ```
 
 ## Getting started
