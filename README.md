@@ -24,7 +24,7 @@ st_ydata_profiling(df)
 ```
 
 [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
-[github_link]: https://github.com/arpy8/st-ydata-profiling
+[github_link]: https://github.com/arpy8/st_ydata_profiling
 
-[pypi_badge]: https://badgen.net/pypi/v/st-ydata-profiling?icon=pypi&color=black&label
-[pypi_link]: https://pypi.org/project/st-ydata-profiling
+[pypi_badge]: https://badgen.net/pypi/v/st_ydata_profiling?icon=pypi&color=black&label
+[pypi_link]: https://pypi.org/project/st_ydata_profiling

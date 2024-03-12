@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="st_ydata_profiling",
-    version="0.1.1",
+    version="0.1.2",
     description="YData Profiling component for Streamlit.",
     long_description=long_description,
     long_description_content_type="text/markdown",
