@@ -1,5 +1,5 @@
 # st_ydata_profiling
-This is a slightly tweaked version of the `streamlit-pandas-profiling` component but with the latest dependencies. I've created this for my another ongoing project whose dependencies kept on clashing with the `streamlit-pandas-profiling` by okld.
+This is a slightly tweaked version of the `streamlit-pandas-profiling` component but with the latest dependencies. I've created this for my another ongoing project whose dependencies kept on clashing with the [streamlit-pandas-profiling](https://github.com/arpy8/st_ydata_profiling) package by [okld](https://github.com/okld).
 
 
 [![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link] 
