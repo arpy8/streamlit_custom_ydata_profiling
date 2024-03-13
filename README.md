@@ -25,12 +25,6 @@ pr = ProfileReport(df)
 st_profile_report(pr)
 ```
 
-## Demo
-
-[![Open in Streamlit][share_badge]][share_link] 
-
-[![Preview][share_img]][share_link]
-
 [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
 [github_link]: https://github.com/arpy8/streamlit_custom_ydata_profiling
 
