@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="streamlit-custom-ydata-profiling",
-    version="0.1.0",
+    version="0.1.1",
     author="Arpit Sengar (arpy8)",
     author_email="arpitsengar99@gmail.com",
     description="Custom YData Profiling component for Streamlit.",
