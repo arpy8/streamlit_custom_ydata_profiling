@@ -26,7 +26,7 @@ if not _RELEASE:
         # We give the component a simple, descriptive name ("my_component"
         # does not fit this bill, so please choose something better for your
         # own component :)
-        "display_profile_report",
+        "st_ydata_profiling",
         # Pass `url` here to tell Streamlit that the component will be served
         # by the local dev server that you run via `npm run start`.
         # (This is useful while your component is in development.)
@@ -38,7 +38,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("display_profile_report", path=build_dir)
+    _component_func = components.declare_component("st_ydata_profiling", path=build_dir)
 
 
 # Create a wrapper function for the component. This is an optional
@@ -46,7 +46,7 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # output value, and add a docstring for users.
-def display_profile_report(report, height=None, navbar=True, key=None):
+def st_ydata_profiling(report, height=None, navbar=True, key=None):
     """Display a profile report.
 
     Parameters
