@@ -1,1 +1,1 @@
-recursive-include custom_st_ydata_profiling/frontend/build *
+recursive-include streamlit_custom_ydata_profiling/frontend/build *

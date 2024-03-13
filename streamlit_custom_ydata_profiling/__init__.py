@@ -1,27 +1,28 @@
 import os
 import streamlit as st
 import streamlit.components.v1 as components
-from custom_st_ydata_profiling.version import __release__, __version__
 
-
+# Create a _RELEASE constant. We'll set this to False while we're developing
+# the component, and True when we're ready to package and distribute it.
 _RELEASE = True
 
 if not _RELEASE:
     _render_component = components.declare_component(
-        "custom_st_ydata_profiling",
+        "streamlit_custom_ydata_profiling",
         url="http://localhost:3001",
     )
 else:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _render_component = components.declare_component("custom_st_ydata_profiling", path=build_dir)
+    _render_component = components.declare_component("streamlit_custom_ydata_profiling", path=build_dir)
+
 
 def st_profile_report(report, height=None, navbar=True, key=None):
     """Display a profile report.
 
     Parameters
     ----------
-    report : pandas_profiling.ProfileReport
+    report : ydata_profiling.ProfileReport
         The profile report instance to display.
     height : int or None
         Report height. If set to None, report will take full height, but

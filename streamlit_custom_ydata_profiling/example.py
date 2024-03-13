@@ -1,6 +1,6 @@
 import pandas as pd
 from ydata_profiling import ProfileReport
-from custom_st_ydata_profiling import st_profile_report
+from streamlit_custom_ydata_profiling import st_profile_report
 
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
@@ -27,6 +27,6 @@ from custom_st_ydata_profiling import st_profile_report
 # name_input = st.text_input("Enter a name", value="Streamlit")
 
 if __name__=="__main__":
-    data = pd.read_csv("assets/spg.csv")
+    data = pd.read_csv("https://storage.googleapis.com/tf-datasets/titanic/train.csv")
     report = ProfileReport(data)
     st_profile_report(report)
