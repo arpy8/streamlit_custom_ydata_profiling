@@ -1,5 +1,5 @@
 {
-  "name": "st_ydata_profiling",
+  "name": "custom_st_ydata_profiling",
   "version": "0.1.1",
   "private": true,
   "dependencies": {

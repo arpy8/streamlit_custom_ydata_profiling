@@ -1,6 +1,6 @@
 test/
 .venv/
-st_ydata_profiling/frontend/node_modules/
+custom_st_ydata_profiling/frontend/node_modules/
 build/
 dist/
 __pycache__/
@@ -9,5 +9,4 @@ __pycache__/
 *.egg-info
 spg.csv
 package-lock.json
-test_example.py
 test_example.py

@@ -1,6 +1,6 @@
 import pandas as pd
 from ydata_profiling import ProfileReport
-from st_ydata_profiling import display_profile_report
+from custom_st_ydata_profiling import st_profile_report
 
 # Add some test code to play with the component while it's in development.
 # During development, we can run this just as we would any other Streamlit
@@ -29,4 +29,4 @@ from st_ydata_profiling import display_profile_report
 if __name__=="__main__":
     data = pd.read_csv("assets/spg.csv")
     report = ProfileReport(data)
-    display_profile_report(report)
+    st_profile_report(report)
