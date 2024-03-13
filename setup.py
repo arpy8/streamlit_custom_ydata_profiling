@@ -1,11 +1,18 @@
-import setuptools
+from pathlib import Path
+from setuptools import setup, find_packages
 
-setuptools.setup(
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+setup(
     name="streamlit-custom-ydata-profiling",
     version="0.1.0",
     author="arpy8",
-    packages=setuptools.find_packages(),
+    description="Custom YData Profiling component for Streamlit.",
+    packages=find_packages(),
     include_package_data=True,
+    long_description=long_description,
+    url="https://github.com/arpy8/streamlit_custom_ydata_profilingg",
     classifiers=[],
     license="MIT",
     license_file="LICENSE",
