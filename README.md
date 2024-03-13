@@ -34,5 +34,5 @@ st_profile_report(pr)
 [github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
 [github_link]: https://github.com/arpy8/streamlit_custom_ydata_profiling
 
-[pypi_badge]: https://badgen.net/pypi/v/streamlit_custom_ydata_profiling?icon=pypi&color=black&label
+[pypi_badge]: https://badgen.net/pypi/v/streamlit-custom-ydata-profiling?icon=pypi&color=black&label
 [pypi_link]: https://pypi.org/project/streamlit-custom-ydata-profiling
